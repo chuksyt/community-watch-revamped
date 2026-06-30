@@ -54,4 +54,13 @@
     document.addEventListener('submit', function () {
         showLoader();
     }, true);
+
+    // When browser restores a page from bfcache (back/forward), DOMContentLoaded
+    // does not fire — so hide the overlay manually here.
+    window.addEventListener('pageshow', function (e) {
+        if (e.persisted) {
+            loader.style.opacity = '0';
+            setTimeout(function () { loader.style.display = 'none'; }, 250);
+        }
+    });
 })();
