@@ -8,8 +8,8 @@ if (isset($_POST["upload"]) && !empty($_FILES)) {
     $img_ext  = strtolower(pathinfo($img_name, PATHINFO_EXTENSION));
     $img_size = $_FILES['profile_pic']['size'] / (1024 * 1024);
 
-    if ($img_ext !== 'png') {
-        echo "<script>alert('Only PNG images are allowed.'); history.back();</script>";
+    if (!in_array($img_ext, ['png', 'jpg', 'jpeg'])) {
+        echo "<script>alert('Only PNG or JPEG images are allowed.'); history.back();</script>";
         exit();
     }
     if ($img_size > 2) {
@@ -24,7 +24,7 @@ if (isset($_POST["upload"]) && !empty($_FILES)) {
 
     $safe_name = preg_replace('/[^a-zA-Z0-9_-]/', '_', $_POST['fullname']);
     $timestamp = time();
-    $img_dest  = $upload_dir . $safe_name . '_' . $timestamp . '.png';
+    $img_dest  = $upload_dir . $safe_name . '_' . $timestamp . '.' . $img_ext;
 
     $fullname = $_POST['fullname'];
     $address  = $_POST['address'];

@@ -20,7 +20,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
 <body><script src="loader.js"></script>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,0,0,0.35);">
         <div class="container">
-            <a class="navbar-brand fst-italic fw-bold" href="index.html">COMMUNITY WATCH</a>
+            <a class="navbar-brand fst-italic fw-bold" href="index.php">COMMUNITY WATCH</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -72,7 +72,10 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
             </form>
 
             <p class="login-footer">
-                Don't have an account? <a href="signup.html">Sign up free</a>
+                Don't have an account? <a href="signup.php">Sign up free</a>
+            </p>
+            <p class="login-footer" style="margin-top:0.5rem;">
+                <a href="forgot_password.php" style="color:rgba(255,255,255,0.4);font-size:0.82rem;">Forgot your password?</a>
             </p>
         </div>
     </main>

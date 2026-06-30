@@ -38,9 +38,9 @@ if (isset($_POST['register'])) {
     if ($result && mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
         if ($row['username'] == $username) {
-            echo "<script>alert('Username already taken'); window.location.href='signup.html';</script>";
+            echo "<script>alert('Username already taken'); window.location.href='signup.php';</script>";
         } else {
-            echo "<script>alert('Email already registered'); window.location.href='signup.html';</script>";
+            echo "<script>alert('Email already registered'); window.location.href='signup.php';</script>";
         }
     } else {
         $hashed = password_hash($_POST['password'], PASSWORD_BCRYPT);
@@ -59,7 +59,7 @@ if (isset($_POST['register'])) {
         if (mysqli_stmt_execute($stmt)) {
             echo "<script>alert('Registration Successful'); window.location.href='login.php';</script>";
         } else {
-            echo "<script>alert('Registration failed, please try again'); window.location.href='signup.html';</script>";
+            echo "<script>alert('Registration failed, please try again'); window.location.href='signup.php';</script>";
         }
     }
 }

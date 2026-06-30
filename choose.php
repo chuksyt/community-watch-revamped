@@ -14,7 +14,7 @@
 <body><script src="loader.js"></script>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,0,0,0.45);">
         <div class="container">
-            <a class="navbar-brand fst-italic fw-bold" href="index.html">COMMUNITY WATCH</a>
+            <a class="navbar-brand fst-italic fw-bold" href="index.php">COMMUNITY WATCH</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,6 +50,12 @@
                 <div class="card-title">Report a Sighting</div>
                 <div class="card-desc">Share information about someone you may have seen</div>
                 <div class="card-cta">Get started <i class="bi bi-arrow-right"></i></div>
+            </a>
+            <a href="my_reports.php" class="action-card">
+                <div class="card-icon"><i class="bi bi-search-heart"></i></div>
+                <div class="card-title">Active Reports</div>
+                <div class="card-desc">Browse all missing persons currently reported on the platform</div>
+                <div class="card-cta">View all <i class="bi bi-arrow-right"></i></div>
             </a>
         </div>
     </div>

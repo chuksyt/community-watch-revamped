@@ -64,7 +64,7 @@ require('connection.php');
 <body><script src="loader.js"></script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand fst-italic fw-bold" href="index.html">COMMUNITY WATCH</a>
+            <a class="navbar-brand fst-italic fw-bold" href="index.php">COMMUNITY WATCH</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -88,7 +88,7 @@ require('connection.php');
         $uname = $_SESSION["UserName"] ?? '';
 
         if (empty($uname)) {
-            echo '<div class="alert alert-danger">Session expired. <a href="index.html">Return to home</a>.</div>';
+            echo '<div class="alert alert-danger">Session expired. <a href="index.php">Return to home</a>.</div>';
         } else {
             $stmt = mysqli_prepare($con, "SELECT * FROM `registered_users` WHERE username = ?");
             mysqli_stmt_bind_param($stmt, "s", $uname);
@@ -130,7 +130,7 @@ require('connection.php');
                     <span class="label">Postal:</span>
                     <span><?php echo htmlspecialchars($row['pin_code']); ?></span>
                 </div>
-                <a href="index.html" class="btn btn-primary w-100 mt-3">Return to Home</a>
+                <a href="index.php" class="btn btn-primary w-100 mt-3">Return to Home</a>
             </div>
         </div>
         <?php

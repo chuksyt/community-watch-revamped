@@ -14,7 +14,7 @@
 <body><script src="loader.js"></script>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,0,0,0.45);">
         <div class="container">
-            <a class="navbar-brand fst-italic fw-bold" href="index.html">COMMUNITY WATCH</a>
+            <a class="navbar-brand fst-italic fw-bold" href="index.php">COMMUNITY WATCH</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,9 +51,11 @@
                         <div class="field-group-label">Your Details</div>
                         <div class="row g-3 mb-3">
                             <div class="col-12">
-                                <label class="form-label">Your Username</label>
-                                <input type="text" class="form-control" name="username"
-                                    placeholder="Your registered username" required>
+                                <label class="form-label">Submitted by</label>
+                                <div class="form-control" style="background:rgba(255,255,255,0.07);color:#ccc;cursor:default;">
+                                    <i class="bi bi-person-check me-2" style="color:#0d6efd;"></i><?php echo htmlspecialchars($_SESSION['username']); ?>
+                                </div>
+                                <input type="hidden" name="username" value="<?php echo htmlspecialchars($_SESSION['username']); ?>">
                             </div>
                         </div>
 
@@ -87,9 +89,9 @@
                         <div class="row g-3">
                             <div class="col-12">
                                 <label class="form-label">
-                                    Photo <span class="text-muted fw-light">(PNG only, max 2MB)</span>
+                                    Photo <span class="text-muted fw-light">(PNG or JPEG, max 2MB)</span>
                                 </label>
-                                <input type="file" class="form-control" accept="image/png"
+                                <input type="file" class="form-control" accept="image/png,image/jpeg"
                                     name="profile_pic" required>
                             </div>
                             <div class="col-12">

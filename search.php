@@ -14,7 +14,7 @@
 <body><script src="loader.js"></script>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,0,0,0.45);">
         <div class="container">
-            <a class="navbar-brand fst-italic fw-bold" href="index.html">COMMUNITY WATCH</a>
+            <a class="navbar-brand fst-italic fw-bold" href="index.php">COMMUNITY WATCH</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -87,9 +87,9 @@
                         <div class="row g-3">
                             <div class="col-12">
                                 <label class="form-label">
-                                    Photo <span class="text-muted fw-light">(PNG only, max 2MB)</span>
+                                    Photo <span class="text-muted fw-light">(PNG or JPEG, max 2MB)</span>
                                 </label>
-                                <input type="file" class="form-control" name="profile_pic" accept="image/png" required>
+                                <input type="file" class="form-control" name="profile_pic" accept="image/png,image/jpeg" required>
                             </div>
                             <div class="col-12">
                                 <label class="form-label">Description</label>
