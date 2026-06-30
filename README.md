@@ -2,20 +2,6 @@
 
 A full-stack missing persons platform built with PHP and MySQL. Community members can report missing persons, submit sightings, and the system automatically compares uploaded photos to flag potential matches.
 
-![Landing page](loginpage.jpg)
-
----
-
-## Screenshots
-
-| Landing | Login | Sign Up |
-|---------|-------|---------|
-| ![Landing page](screenshots/01_landing.png) | ![Login page](screenshots/02_login.png) | ![Sign up page](screenshots/03_signup.png) |
-
-| About | Forgot Password |
-|-------|------------------|
-| ![About page](screenshots/04_about.png) | ![Forgot password page](screenshots/05_forgot_password.png) |
-
 ---
 
 ## Features
