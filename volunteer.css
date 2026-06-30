@@ -1,0 +1,112 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('volunteer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* reuse the same form-card pattern as search */
+.form-card {
+    background: rgba(255, 255, 255, 0.93);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2.25rem 2.5rem;
+    box-shadow: 0 16px 56px rgba(0, 0, 0, 0.45);
+}
+
+.form-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1.5px solid #eee;
+    margin-bottom: 1.75rem;
+}
+
+.form-card-header > i {
+    font-size: 2rem;
+    color: #0d6efd;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.form-card-title {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #111;
+    letter-spacing: -0.2px;
+}
+
+.form-card-sub {
+    font-size: 0.87rem;
+    color: #777;
+    margin-top: 0.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.field-group-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #0d6efd;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #e5edff;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #333;
+    margin-bottom: 0.35rem;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1.5px solid #dde1e7;
+    padding: 0.65rem 0.9rem;
+    font-size: 0.92rem;
+    color: #111;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.14);
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #bbb;
+    font-weight: 300;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.82rem;
+    background: #0d6efd;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 4px 18px rgba(13, 110, 253, 0.35);
+}
+
+.btn-submit:hover {
+    background: #0b5ed7;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 24px rgba(13, 110, 253, 0.5);
+}

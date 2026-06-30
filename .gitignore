@@ -1,0 +1,11 @@
+# Uploaded user files
+uploads/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor / tool folders
+.vscode/
+.idea/
+.claude/

@@ -1,0 +1,78 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('choose.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+#person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1rem 3rem;
+    gap: 1.5rem;
+}
+
+.card {
+    width: 520px;
+    max-width: 95vw;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    backdrop-filter: blur(6px);
+}
+
+.card-header {
+    background-color: #0d6efd;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.85rem 1.25rem;
+}
+
+.card-body {
+    background-color: rgba(255, 255, 255, 0.93);
+    padding: 1.5rem 1.25rem;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Developer card specifics */
+.dev-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.4rem;
+}
+
+.dev-role,
+.dev-school {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.dev-role i,
+.dev-school i {
+    color: #0d6efd;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.contact-link:hover {
+    color: #0b5ed7;
+    text-decoration: underline;
+}

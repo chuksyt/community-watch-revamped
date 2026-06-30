@@ -1,0 +1,70 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f6f8;
+}
+
+.ty-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 88vh;
+    text-align: center;
+    padding: 2rem;
+}
+
+.ty-icon {
+    font-size: 5rem;
+    color: #0d6efd;
+    margin-bottom: 1.25rem;
+    animation: pop-in 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes pop-in {
+    from { transform: scale(0.5); opacity: 0; }
+    to   { transform: scale(1);   opacity: 1; }
+}
+
+.ty-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+}
+
+.ty-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #111;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.75rem;
+}
+
+.ty-sub {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.ty-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    background: #0d6efd;
+    color: #ffffff;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    box-shadow: 0 4px 18px rgba(13, 110, 253, 0.35);
+    transition: background 0.2s, transform 0.15s;
+}
+
+.ty-btn:hover {
+    background: #0b5ed7;
+    color: #ffffff;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/icons/bootstrap-icons.css" rel="stylesheet">
+    <title>No Match Found — Community Watch</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        .result-card {
+            max-width: 560px;
+            margin: 0 auto;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 3rem 2.5rem;
+            background-color: #ffffff;
+        }
+
+        .result-card .icon {
+            font-size: 4rem;
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+        }
+
+        .result-card h2 {
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .result-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+
+<body><script src="loader.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fst-italic fw-bold" href="index.html">COMMUNITY WATCH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex align-items-center justify-content-center" style="min-height: 88vh;">
+        <div class="result-card">
+            <div class="icon"><i class="bi bi-search-heart"></i></div>
+            <h2>No Match Found</h2>
+            <p>We were unable to find a matching record in our database at this time.<br>
+                We will notify you as soon as any information becomes available.</p>
+            <a href="choose.php" class="btn btn-primary mt-3">Back to Dashboard</a>
+        </div>
+    </div>
+
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
