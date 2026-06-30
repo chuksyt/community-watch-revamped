@@ -90,5 +90,4 @@ A full-stack missing persons platform built with PHP and MySQL. Community member
 ## Author
 
 **Nmerole Akachukwu** — Full Stack Developer  
-University of Nigeria, Nsukka  
 [nmeroleebus@gmail.com](mailto:nmeroleebus@gmail.com)
